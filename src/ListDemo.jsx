@@ -24,7 +24,7 @@ function MemberTable({ members }) {
 function MemberDemo(props) {
   return (
     <div>
-      <h4>All Members</h4>
+      <h1>All Members</h1>
       <MemberTable members={props.members} />
     </div>
   );
