@@ -44,6 +44,11 @@ function Timer() {
   return (
     <div>
       <h1>Timer</h1>
+
+      <div>
+        <h3>Time Remaining: {formatTime(time)}</h3>
+      </div>
+
       <div>
         <input
           type="number"
@@ -57,10 +62,6 @@ function Timer() {
           value={seconds}
           onChange={(e) => setSeconds(parseInt(e.target.value))}
         />
-      </div>
-
-      <div>
-        <h3>Time Remaining: {formatTime(time)}</h3>
       </div>
 
       <div>
